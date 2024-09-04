@@ -20,6 +20,7 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <div id="app">
         <div class="container">
+            <h1>Carosello con VUE</h1>
             <div id="carousel">
                 <i id="prev" class="fa-solid fa-angle-left" @click="prevSlide"></i>
                 <div class="gallery">
@@ -30,7 +31,8 @@
                 <i id="next" class="fa-solid fa-angle-right" @click="nextSlide"></i>
             </div>
             <div id="thumbnails">
-                <!--Qui inserisco le immagini in modo dinamico da Javascript-->
+                <img v-for="slide in sliderImages" :src="slide.image" :class="{active: i === activeIndex}">
+
             </div>
         </div>
 
