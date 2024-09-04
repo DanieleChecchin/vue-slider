@@ -9,6 +9,75 @@
 /* Utils */
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
+}
+
+/* CAROUSEL */
+
+#carousel {
+    height: 400px;
+    width: 450px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.gallery {
+    height: 100%;
+}
+
+#carousel img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#carousel img.active {
+    display: block;
+}
+
+#carousel .fa-solid {
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#prev {
+    left: -10%;
+}
+
+#next {
+    right: -10%;
+}
+
+/* THUMBNAILS */
+
+#thumbnails {
+    width: 450px;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#thumbnails img {
+    width: 19%;
+    height: 100%;
+    border-radius: 15px;
+    filter: grayscale(1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+#thumbnails img:hover {
+    transform: translateY(-10px);
+    filter: grayscale(0.5);
+}
+
+#thumbnails img.active {
+    filter: grayscale(0);
+    box-shadow: 0 0 10px purple;
 }
