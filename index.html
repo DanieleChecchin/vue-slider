@@ -24,6 +24,8 @@
                 <i id="prev" class="fa-solid fa-angle-left" @click="prevSlide"></i>
                 <div class="gallery">
                     <img :src="sliderImages[activeIndex].image">
+                    <h4 class="overlay"> {{ sliderImages[activeIndex].title }} </h4>
+                    <p class="overlay"> {{ sliderImages[activeIndex].text }} </p>
                 </div>
                 <i id="next" class="fa-solid fa-angle-right" @click="nextSlide"></i>
             </div>

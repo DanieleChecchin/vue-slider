@@ -24,16 +24,30 @@
 
 .gallery {
     height: 100%;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    color: white;
+}
+
+h4 {
+    margin-bottom: 60px;
+}
+
+p {
+    margin-bottom: 10px;
 }
 
 #carousel img {
     height: 100%;
     width: 100%;
     border-radius: 15px;
-}
-
-#carousel img.active {
-    display: block;
 }
 
 #carousel .fa-solid {
